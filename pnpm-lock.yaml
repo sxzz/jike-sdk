@@ -28,8 +28,8 @@ importers:
         specifier: ^2.3.5
         version: 2.3.5
       '@types/node':
-        specifier: ^20.12.6
-        version: 20.12.6
+        specifier: ^22.13.9
+        version: 22.13.9
       '@vitest/ui':
         specifier: ^2.0.3
         version: 2.0.3(vitest@2.0.3)
@@ -68,7 +68,7 @@ importers:
         version: 5.4.4
       vitest:
         specifier: ^2.0.3
-        version: 2.0.3(@types/node@20.12.6)(@vitest/ui@2.0.3)
+        version: 2.0.3(@types/node@22.13.9)(@vitest/ui@2.0.3)
 
 packages:
 
@@ -671,8 +671,8 @@ packages:
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
 
-  '@types/node@20.12.6':
-    resolution: {integrity: sha512-3KurE8taB8GCvZBPngVbp0lk5CKi8M9f9k1rsADh0Evdz5SzJ+Q+Hx9uHoFGsLnLnd1xmkDQr2hVhlA0Mn0lKQ==}
+  '@types/node@22.13.9':
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2369,8 +2369,8 @@ packages:
   unconfig@0.3.12:
     resolution: {integrity: sha512-oDtfWDC0TMYFuwdt7E7CaqYZGqq1wAiC12PRTFe/93IkgNi+wVlF/LCjcD/bgNkGoopb0RsU363Ge3YXy7NGSw==}
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
   unist-util-stringify-position@2.0.3:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
@@ -2952,9 +2952,9 @@ snapshots:
     dependencies:
       '@types/unist': 2.0.10
 
-  '@types/node@20.12.6':
+  '@types/node@22.13.9':
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.20.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -3143,7 +3143,7 @@ snapshots:
       pathe: 1.1.2
       sirv: 2.0.4
       tinyrainbow: 1.2.0
-      vitest: 2.0.3(@types/node@20.12.6)(@vitest/ui@2.0.3)
+      vitest: 2.0.3(@types/node@22.13.9)(@vitest/ui@2.0.3)
 
   '@vitest/utils@2.0.3':
     dependencies:
@@ -4780,7 +4780,7 @@ snapshots:
       jiti: 1.21.0
       mlly: 1.6.1
 
-  undici-types@5.26.5: {}
+  undici-types@6.20.0: {}
 
   unist-util-stringify-position@2.0.3:
     dependencies:
@@ -4810,13 +4810,13 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-node@2.0.3(@types/node@20.12.6):
+  vite-node@2.0.3(@types/node@22.13.9):
     dependencies:
       cac: 6.7.14
       debug: 4.3.5
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.2.8(@types/node@20.12.6)
+      vite: 5.2.8(@types/node@22.13.9)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4827,16 +4827,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.2.8(@types/node@20.12.6):
+  vite@5.2.8(@types/node@22.13.9):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.1
     optionalDependencies:
-      '@types/node': 20.12.6
+      '@types/node': 22.13.9
       fsevents: 2.3.3
 
-  vitest@2.0.3(@types/node@20.12.6)(@vitest/ui@2.0.3):
+  vitest@2.0.3(@types/node@22.13.9)(@vitest/ui@2.0.3):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.3
@@ -4854,11 +4854,11 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.2.8(@types/node@20.12.6)
-      vite-node: 2.0.3(@types/node@20.12.6)
+      vite: 5.2.8(@types/node@22.13.9)
+      vite-node: 2.0.3(@types/node@22.13.9)
       why-is-node-running: 2.2.2
     optionalDependencies:
-      '@types/node': 20.12.6
+      '@types/node': 22.13.9
       '@vitest/ui': 2.0.3(vitest@2.0.3)
     transitivePeerDependencies:
       - less
